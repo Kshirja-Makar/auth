@@ -1,0 +1,40 @@
+
+<div class="containe mt-4">
+
+    <header class="bg-light test-dark p-2 mb-2 text-center">
+<h1>Register</h1>
+    </header>
+</div>
+
+<form (ngSubmit)="submit()"[formGroup]="form">
+    <div class="form-group">
+        <label for="firstName">FIRST NAME</label>
+        <input type="text" formControlName="firstName" name="firstName" class="form-control" >
+    </div>
+        <div class="form-group">
+        <label for="lastName">LAST NAME</label>
+        <input type="text" formControlName="lastName" name="firstName" class="form-control" >
+    </div>
+    <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="email" formControlName="email" name="email" class="form-control" >
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="test" formControlName="phone" name="phone" class="form-control" >
+    </div>
+    <div class="form-group">
+        <label for="referedBy">ReferedBY</label>
+        <input type="text" formControlName="referedBy" name="referedBy" class="form-control" >
+    </div>
+    <div class="form-group">
+          <label for="password">password</label>
+        <input type="password" formControlName="password" name="password" class="form-control" autocomplete="on" >
+    </div>
+    <div class="form-group">
+        <label for="confirm_password">Confirm password</label>
+        <input type="password" formControlName="confirm_password" name="confirm_password" class="form-control" autocomplete="on" >
+    </div>
+    
+    <button type="submit" class="btn btn-warning">submit</button>
+</form>
